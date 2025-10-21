@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    @font-face {
+        font-family: dana regular;
+        src: local("Dana regular"), url("../assets/font/woff2/DanaFaNum-Regular.woff2") format("woff2");
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: dana medium;
+        src: local("Dana medium"), url("../assets/font/woff2/DanaFaNum-Medium.woff2") format("woff2");
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: dana bold;
+        src: local("Dana bold"), url("../assets/font/woff2/DanaFaNum-Bold.woff2") format("woff2");
+        font-display: swap;
+    }
+    
+    body{
+        @apply font-dana-r;
+    }
+}
